@@ -1,0 +1,27 @@
+:root{
+    --main: #6fb121;
+    --sec: #4f7d17;
+}
+body{
+    font-size: 18px;
+}
+.btns{
+    background-color: var(--main);
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.btns:hover{
+    background-color: var(--sec);
+}
+.link{
+    text-decoration: none;
+    color: var(--sec);
+    font-weight: bolder;
+}
+.link:hover{
+    color: var(--main);
+}
