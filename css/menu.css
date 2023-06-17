@@ -1,9 +1,14 @@
 .main-menu{
-    background-color: rgb(32, 108, 207);
+    background-color:#071409;
+}
+.logo-box, .list-box, .icons-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .list-box .nav-link{
     color:white;
 }
-.logo-box{
-    width:200px;
+.list-box li{
+    padding:10px;
 }
