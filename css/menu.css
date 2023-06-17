@@ -12,3 +12,49 @@
 .list-box li{
     padding:10px;
 }
+.popular{
+    margin:50px;
+}
+.popular img{
+    position:relative;
+    height:250px;
+    object-fit: cover;
+}
+.bt{
+    position:absolute;
+    top:180px;
+    left:15px;
+}
+.review{
+    color: var(--main);
+}
+.card-body li span{
+    color: var(--main);
+}
+.card-body li{
+    list-style-type: none;
+}
+.card{
+    border:none;
+}
+.card-img-top{
+    border-radius:10px;
+}
+.service{
+    height:400px;
+    margin:30px auto;
+    border:1px solid red;
+}
+.service-box{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+}
+.service-box-inn{
+    width:20%;
+    overflow: hidden;
+    height: 400px;
+}
+.service-box-inn img{
+    object-fit: cover;
+}
