@@ -1,13 +1,24 @@
 .main-menu{
-    background-color:var(--dark);
+    /* z-index: 1; */
+    /* position: fixed; */
+    top: 0;
+    background-color: #fff;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); */
+
 }
-.logo-box, .list-box, .icons-box{
+.logo-box,
+.list-box,
+.icons-box{
     display:flex;
     justify-content: center;
     align-items: center;
 }
 .list-box .nav-link{
-    color:white;
+    font-weight: 700;
+    font-size: 16px;
+}
+.logo-box img{
+    scale: 0.8;
 }
 .list-box li{
     padding:10px;
@@ -145,3 +156,4 @@ footer .col-lg-3 img{
     width: 80%;
     align-items: center;
 }
+

@@ -12,8 +12,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/package.css" />
+
   </head>
   <body>
     <!-- menu section -->
@@ -53,8 +56,8 @@
             </div>
           </nav>
         </div>
-        <div class=" col-md-1 icons-box">
-          <button class="btn btn-success">Enquiry</button>
+        <div class="col-md-1 icons-box">
+          <button class="btns b-main">Enquiry</button>
         </div>
       </div>
     </section>
@@ -125,10 +128,144 @@
                 <li class="para">Place Name</li>
                 <li class="para">From <span><b>$5,800</b></span></li>
             </div>
+=======
+    <!-- menu section end -->
+
+    <!-- Banner Section  -->
+    <section class="banner-sec">
+      <div id="banner" class="main-banner carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#banner"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#banner"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#banner"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video width="100%" autoplay loop>
+              <source src="asset/videos/aspire-banner.mp4" type="video/mp4" />
+              <p>Your browser does not support video</p>
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/asset/images/banner2.jpg"
+              class="d-block w-100"
+              alt="travel Banner"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/asset/images/banner1.jpg"
+              class="d-block w-100"
+              alt="travel Banner"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#banner"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#banner"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Banner Section End -->
+
+    <!-- spotlight section  -->
+    <section class="spotlight-sec">
+      <div class="container">
+        <div class="spotlight row">
+          <div class="spot-inn col-md-4">
+            <div class="img-circle">
+              <img class="img-fluid" src="asset/gif/happy.gif" alt="" />
+            </div>
+            <br />
+            <p class="sub-heading">15 Years of Experiences</p>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              impedit eos atque maiores quis asperiores quas tempore? Quod, nam!
+              Reprehenderit maiores consequuntur id consectetur perferendis
+              culpa laudantium quo enim adipisci.
+            </p>
+          </div>
+          <div class="spot-inn col-md-4">
+            <div class="img-circle">
+              <img class="img-fluid" src="asset/gif/tour.gif" alt="" />
+            </div>
+            <br />
+            <p class="sub-heading">10k Tours Completed</p>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              impedit eos atque maiores quis asperiores quas tempore? Quod, nam!
+              Reprehenderit maiores consequuntur id consectetur perferendis
+              culpa laudantium quo enim adipisci.
+            </p>
+          </div>
+          <div class="spot-inn col-md-4">
+            <div class="img-circle">
+              <img class="img-fluid" src="asset/gif/earth.gif" alt="" />
+            </div>
+            <br />
+            <p class="sub-heading">1000 Location Coverd</p>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              impedit eos atque maiores quis asperiores quas tempore? Quod, nam!
+              Reprehenderit maiores consequuntur id consectetur perferendis
+              culpa laudantium quo enim adipisci.
+            </p>
+
           </div>
         </div>
       </div>
     </section>
+
     <!-- end popular package -->
     <!-- service section start -->
     <section class="service">
@@ -205,6 +342,244 @@
       </div>
     </footer>
     <!-- footer section end -->
+
+=======
+    <!-- Spotlight Section End  -->
+
+    <!-- About Section  -->
+    <section class="about-sec">
+      <div class="container">
+        <div class="home-about row">
+          <div class="home-about-img col-md-6">
+            <div>
+              <img class="img-fluid" src="asset/images/banner2.jpg" alt="" />
+            </div>
+            <div>
+              <img class="img-fluid" src="asset/images/banner1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="home-about-cont col-md-6">
+            <p class="mini-heading">ABOUT US</p>
+            <h2 class="main-heading">Traveling Leaves you speechless</h2>
+            <p class="para">
+              <br />
+              Aspire Holidays provides Tours and Travel opportunities of all
+              kinds, to everyone on selective different locations. We, at Aspire
+              Holidays believe in presenting South India in a way that is quite
+              unique, unexplored, and unhindered. We want to show you the
+              possibilities that are immense and unending.
+            </p>
+            <br />
+            <button class="btns b-main">Know More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Abot Section End  -->
+
+    <!-- Packah=ge Category Section  -->
+    <section class="hero-section">
+      <h2 class="main-heading">Tour Categories</h2>
+      <div class="container">
+        <div class="card">
+          <div class="card-title">
+            <h2 class="title mini-heading">Domestic</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <h2 class="title mini-heading">International</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <h2 class="title mini-heading">Educational</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <h2 class="title mini-heading">Honeymoon</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <h2 class="title mini-heading">Cruises</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Package Category Section End  -->
+
+    <!-- blog Section  -->
+    <section class="blog-sec">
+      <div class="blog-box container">
+        <div class="blog-title-box">
+          <h2 class="main-heading">Checkout Our Latest Blogs</h2>
+          <a href="/" class="link">View All</a>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="blog-box-inn">
+              <div class="blog-img-box">
+                <img class="img-fluid" src="/asset/images/cruser.jpg" alt="" />
+              </div>
+              <div class="blog-des-box">
+                <p>October 14, 2023</p>
+                <h2 class="sub-heading">High Altitude Campsite</h2>
+                <p class="para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                  rerum ipsa possimus ducimus aperiam praesentium corrupti sint,
+                  optio accusantium minus. Culpa id nesciunt modi eveniet
+                  tenetur repudiandae vero ad aperiam!
+                </p>
+                <button class="btns b-dark">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog-box-inn">
+              <div class="blog-img-box">
+                <img
+                  class="img-fluid"
+                  src="/asset/images/honeymoon.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="blog-des-box">
+                <p>October 14, 2023</p>
+                <h2 class="sub-heading">High Altitude Campsite</h2>
+                <p class="para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                  rerum ipsa possimus ducimus aperiam praesentium corrupti sint,
+                  optio accusantium minus. Culpa id nesciunt modi eveniet
+                  tenetur repudiandae vero ad aperiam!
+                </p>
+                <button class="btns b-dark">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog-box-inn">
+              <div class="blog-img-box">
+                <img
+                  class="img-fluid"
+                  src="/asset/images/international.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="blog-des-box">
+                <p>October 14, 2023</p>
+                <h2 class="sub-heading">High Altitude Campsite</h2>
+                <p class="para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                  rerum ipsa possimus ducimus aperiam praesentium corrupti sint,
+                  optio accusantium minus. Culpa id nesciunt modi eveniet
+                  tenetur repudiandae vero ad aperiam!
+                </p>
+                <button class="btns b-dark">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section End  -->
+
+    <!-- Review Section  -->
+    <section class="review-sec">
+      <div class="review-title">
+        <h2 class="main-heading">Custome Reviews</h2>
+        <p class="para">What our customers are saying..</p>
+      </div>
+      <div class="review-box container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="review-box-inn">
+              <div class="review">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident pariatur expedita explicabo beatae suscipit
+                  asperiores praesentium eligendi repudiandae, adipisci
+                  voluptatibus!
+                </p>
+                <div class="stars">
+                  <img src="asset/gif/Reward.gif" alt="">
+                  <img src="asset/gif/Reward.gif" alt="">
+                  <img src="asset/gif/Reward.gif" alt="">
+                  <img src="asset/gif/Reward.gif" alt="">
+                  <img src="asset/gif/Reward.gif" alt="">
+                </div>
+              </div>
+              <div class="reviewer">
+                <p>Ragan Pirate</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="review-box-inn">
+              <div class="review">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident pariatur expedita explicabo beatae suscipit
+                  asperiores praesentium eligendi repudiandae, adipisci
+                  voluptatibus!
+                </p>
+                <div class="stars">
+                  <img src="asset/gif/Reward.gif" alt="">
+                  <img src="asset/gif/Reward.gif" alt="">
+                  <img src="asset/gif/Reward.gif" alt="">
+                  <img src="asset/gif/Reward.gif" alt="">
+                  <img src="asset/gif/Reward.gif" alt="">
+                </div>
+              </div>
+              <div class="reviewer">
+                <p>Ragan Pirate</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="review-box-inn">
+              <div class="review">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident pariatur expedita explicabo beatae suscipit
+                  asperiores praesentium eligendi repudiandae, adipisci
+                  voluptatibus!
+                </p>
+                <div class="stars">
+                  <img src="asset/gif/Reward.gif" alt="">
+                  <img src="asset/gif/Reward.gif" alt="">
+                  <img src="asset/gif/Reward.gif" alt="">
+                  <img src="asset/gif/Reward.gif" alt="">
+                  <img src="asset/gif/Reward.gif" alt="">
+                </div>
+              </div>
+              <div class="reviewer">
+                <p>Keerthi Malar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Review Section End  -->
+
+    <!-- jQuery cdn  -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+      integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/package.js"></script>
 
   </body>
 </html>

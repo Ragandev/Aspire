@@ -48,11 +48,7 @@ body {
 }
 
 /* Heading  */
-.main-heading,
-.sub-heading,
-.mini-heading {
-  letter-spacing: 3px;
-}
+
 .main-heading {
   font-size: 40px;
   font-weight: 900;
