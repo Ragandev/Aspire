@@ -1,5 +1,5 @@
 .main-menu{
-    background-color:#071409;
+    background-color:var(--dark);
 }
 .logo-box, .list-box, .icons-box{
     display:flex;
@@ -41,20 +41,107 @@
     border-radius:10px;
 }
 .service{
-    height:400px;
-    margin:30px auto;
-    border:1px solid red;
+    height:500px;
+    margin:40px auto;
+    position: relative;
+    overflow: hidden;
 }
 .service-box{
     display:flex;
     flex-direction: row;
     flex-wrap:nowrap;
 }
-.service-box-inn{
-    width:20%;
-    overflow: hidden;
-    height: 400px;
+.service-text{
+    position: absolute;
+    top:400px;
+    color:white;
+    text-align: center;
+    z-index: 2;
 }
-.service-box-inn img{
-    object-fit: cover;
+.service-box span{
+    display:none;
+}
+
+.service-box-inn1 :hover > span{
+    display:block;
+    color:var(--main);
+}
+.service-box-inn2 :hover > span{
+    display:block;
+    color:var(--main);
+}
+.service-box-inn3 :hover > span{
+    display:block;
+    color:var(--main);
+}
+.service-box-inn4 :hover > span{
+    display:block;
+    color:var(--main);
+}
+.service-box-inn5 :hover > span{
+    display:block;
+    color:var(--main);
+}
+
+.service-box div{
+    width:20%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.service-bg{
+    max-height: 200px;
+    width: 100%; 
+    position:absolute;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1)10%, rgba(0, 0, 0, 0));
+    bottom: 0;
+    z-index: 1;
+}
+.service-box-inn1:hover .service-bg{
+    min-height: 100%;
+}
+.service-box-inn2:hover .service-bg{
+    min-height: 100%;
+}
+.service-box-inn3:hover .service-bg{
+    min-height: 100%;
+}
+.service-box-inn4:hover .service-bg{
+    min-height: 100%;
+}
+.service-box-inn5:hover .service-bg{
+    min-height: 100%;
+}
+.service-box-inn1{
+    background-image: url("/asset/images/2.jpg");
+}
+.service-box-inn2{
+    background-image: url("/asset/images/1.jpg");
+}
+.service-box-inn3{
+    background-image: url("/asset/images/2.jpg");
+}
+.service-box-inn4{
+    background-image: url("/asset/images/1.jpg");
+}
+.service-box-inn5{
+    background-image: url("/asset/images/2.jpg");
+}
+.ft{
+    height: 280px;
+    background-color: var(--dark);
+    color:#fff;
+    margin:0 auto;
+    padding:50px 0px;
+}
+.ft li{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+footer .sub-heading{
+    padding-bottom:10px;
+}
+footer .col-lg-3 img{
+    width: 80%;
+    align-items: center;
 }
