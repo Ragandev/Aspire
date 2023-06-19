@@ -1,0 +1,134 @@
+.hero-section {
+  width: 100%;
+  height: 550px;
+  margin: 10px 0 250px 0;
+}
+
+.hero-section h2 {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero-section .container {
+  height: 300px;
+  width: 100%;
+  display: flex;
+}
+
+.hero-section .container .card {
+  height: 480px;
+  width: 550px;
+  border: 2px solid var(--main);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.5);
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  background-position: center;
+}
+
+.hero-section .card:first-child {
+  background-image: url("/asset/images/domestic.jpg");
+}
+
+.hero-section .card:nth-child(2) {
+  background-image: url("/asset/images/international.jpeg");
+}
+
+.hero-section .card:nth-child(3) {
+  background-image: url("/asset/images/college.jpg");
+}
+
+.hero-section .card:nth-child(4) {
+  background-image: url("/asset/images/honeymoon.jpg");
+}
+
+.hero-section .card:nth-child(5) {
+  background-image: url("/asset/images/cruser.jpg");
+}
+
+.hero-section .card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.hero-section .card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.hero-section .card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.hero-section .card-title {
+  background-color: #fff;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .title {
+  font-size: 14px;
+  letter-spacing: normal;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/* Blog Section  */
+.blog-sec {
+  padding: 30px 0 100px 0;
+}
+.blog-title-box {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.blog-title-box a {
+  text-align: left;
+  margin: 0 0 0 auto;
+}
+.blog-box-inn {
+  background-color: rgba(240, 248, 255, 0.5);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.blog-des-box {
+  padding: 30px;
+}
+.blog-box-inn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 10px;
+  background-color: var(--main);
+  width: 100%;
+}
+
+/* Review Section  */
+
+.review-sec{
+  padding: 100px 0;
+}
+.review-title{
+  text-align: center;
+  margin-bottom: 70px;
+}
+.review-box-inn{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fdfdfe;
+  padding: 50px 30px;
+}
+.stars{
+  margin-bottom: 10px;
+}
+.stars img{
+  height: 40px;
+}

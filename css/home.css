@@ -1,74 +1,69 @@
 /* BAnner  */
+
 /* .main-banner{
     margin-bottom: -5px;
 } */
-.banner-sec{
-    /* margin-top: 100px; */
+.banner-sec {
+  /* margin-top: 100px; */
 }
-.main-banner .carousel-inner{
-    max-height: 600px;
-    overflow: hidden;
-    display: flex;
+.main-banner .carousel-inner {
+  max-height: 600px;
+  overflow: hidden;
+  display: flex;
 }
-/* .main-banner .carousel-inner .carousel-item img,
-.main-banner .carousel-inner .carousel-item video{
-    
-} */
 
 /* Spot light */
-.spotlight-sec{
-    height: 400px;
-    padding: 110px;
-    margin-bottom: 200px;
+.spotlight-sec {
+  height: 400px;
+  padding: 110px;
+  margin-bottom: 200px;
 }
-.spot-inn{
-    padding: 20px;
-    text-align: center;
+.spot-inn {
+  padding: 20px;
+  text-align: center;
 }
-.img-circle{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #00cccc;
-    margin: 0 auto;
+.img-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid var(--main);
+  margin: 0 auto;
 }
-.img-circle img{
-    width: 70%;
+.img-circle img {
+  width: 70%;
 }
 
 /* Home About  */
 
-.about-sec{
-    padding: 200px 0;
+.about-sec {
+  padding: 200px 0;
 }
-.home-about-img{
-    position: relative;
+.home-about-img {
+  position: relative;
 }
-.home-about-img div{
-    position: absolute;
-    overflow: hidden;
-    
-    border-radius: 20px ;
+.home-about-img div {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 20px;
 }
-.home-about-img div img{
-    height: 100%;
+.home-about-img div img {
+  height: 100%;
 }
 
-.home-about-img div:first-child{
-    width: 90%;
-    height: 500px
-    
+.home-about-img div:first-child {
+  width: 90%;
+  height: 500px;
 }
-.home-about-img div:nth-child(2){
-    width: 300px;
-    height: 350px;
-    top: -30px;
-    left: -30px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+.home-about-img div:nth-child(2) {
+  width: 300px;
+  height: 350px;
+  top: -30px;
+  left: -30px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
-.home-about-cont{
-    margin-top: 50px;
+.home-about-cont {
+  margin-top: 50px;
 }
