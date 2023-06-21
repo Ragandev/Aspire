@@ -84,19 +84,19 @@
 
 /* Popular Packages  */
 .popular{
-  margin:50px;
+  padding: 100px 0;
 }
 .popular .main-heading{
   margin-bottom: 30px;
 }
 .popular img{
   position:relative;
-  height:350px;
+  height:250px;
   object-fit: cover;
 }
 .bt{
   position:absolute;
-  top:270px;
+  top:170px;
   left:15px;
 }
 .bt .sub-heading{
@@ -110,6 +110,15 @@
 }
 .card-img-top{
   border-radius:10px;
+}
+.pop-title-box {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.pop-title-box a {
+  text-align: left;
+  margin: 0 0 0 auto;
 }
 
 /* services Section  */
