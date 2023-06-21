@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
 :root {
-  --main: #6fb121;
+  --main: rgb(111, 177, 33);
   --sec: #4f7d17;
-  --dark: #071409;
+  --dark: #1e1e1e;
   --lit: rgb(80, 80, 80);
 }
 
@@ -48,7 +48,6 @@ body {
 }
 
 /* Heading  */
-
 .main-heading {
   font-size: 40px;
   font-weight: 900;
@@ -63,4 +62,10 @@ body {
 }
 .para {
   color: var(--lit);
+}
+
+input:focus, textarea:focus{
+  outline: none !important;
+  box-shadow: none !important;
+  border: 2px solid var(--main) !important;
 }
