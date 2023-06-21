@@ -22,3 +22,41 @@
 .list-box li{
     padding:10px;
 }
+.about{
+   margin:100px 50px 100px 50px; 
+   padding:10px;
+}
+.about img{
+    width:300px;
+    object-fit: cover;
+    box-shadow:black;
+}
+.about h3{
+    color:var(--main)
+}
+.about-img{
+    position: absolute;
+    top:150px;
+    right:150px;
+}
+.about-box{
+    margin:100px 50px;
+    padding:20px;
+}
+.about-value{
+    margin:80px 10px;
+}
+.about-value .main-heading{
+    color:var(--main);
+}
+.about-value button{
+    color:var(--lit);
+}
+.about-value .sub-heading:not(.collapsed){
+    color:var(--main) !important;
+    
+}
+.about-value .sub-heading:not(.collapsed):focus{
+    outline: 0 !important;
+    border: 0 !important;
+}
