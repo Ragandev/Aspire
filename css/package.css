@@ -1,7 +1,8 @@
 .hero-section {
   width: 100%;
-  height: 550px;
-  margin: 10px 0 250px 0;
+  height: 600px;
+  overflow: hidden;
+  padding: 50px 0 0 0;
 }
 
 .hero-section h2 {
@@ -84,129 +85,161 @@
 
 /* Popular Packages  */
 .popular{
-  padding: 100px 0;
+  padding: 150px 0;
 }
-.popular .main-heading{
-  margin-bottom: 30px;
+.dom{
+  background-color: var(--main);
+  color: #fff;
 }
-.popular img{
-  position:relative;
-  height:250px;
+.hny{
+  background-color: var(--main);
+  color: #fff;
+}
+.int,.edu{
+  background-color: #f1f1f1;
+}
+.item {
+  min-height: 380px;
+  max-height: 380px;
+  overflow: hidden;
+  object-fit: cover;
+  position: relative;
+}
+.item::before {
+  content: "";
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    315deg, rgba(32, 191, 85, 0.5) 0%, 
+    rgba(1, 186, 239, 0.5) 74%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.item-img {
   object-fit: cover;
 }
-.bt{
-  position:absolute;
-  top:170px;
-  left:15px;
+.item::after{
+  cursor: pointer;
+  content: 'Know More';
+  color: var(--main);
+  font-weight: bold;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  width: fit-content;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.5s;
 }
-.bt .sub-heading{
+.item:hover::after{
+  opacity: 1;
+}
+.item:hover::before{
+  opacity: 1;
+}
+.owl-nav{
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 290px;
+  color: var(--main);
+}
+.nav-right .owl-nav {
+  left: -100px;
+}
+.nav-left .owl-nav{
+  right: -100px;
   color: #fff;
 }
-.review{
-  color: #fff;
+.text-box h1 {
+  margin-left: 20px;
 }
-.card{
-  border:none;
-}
-.card-img-top{
-  border-radius:10px;
-}
-.pop-title-box {
-  display: flex;
-  margin-bottom: 20px;
-  align-items: center;
-}
-.pop-title-box a {
-  text-align: left;
-  margin: 0 0 0 auto;
+.text-box img {
+  width: 60%;
+  margin-left: 60px;
+  margin-top: 60px;
 }
 
 /* services Section  */
-.service{
-  height:500px;
-  margin:40px auto 0 auto;
+.service {
+  height: 500px;
+  margin: 40px auto 0 auto;
   position: relative;
   overflow: hidden;
 }
-.service-box{
-  display:flex;
-  flex-direction: row;
-  flex-wrap:nowrap;
+.service .main-heading{
+  padding: 30px 0;
 }
-.service-text{
+.service-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.service-text {
   position: absolute;
-  top:400px;
-  color:white;
+  top: 400px;
+  color: white;
   text-align: center;
   z-index: 2;
 }
-.service-box span{
-  display:none;
+.service-box span {
+  opacity: 0;
+  transition: all 0.3s;
 }
 
-.service-box-inn1 :hover > span{
-  display:block;
-  color:var(--main);
-}
-.service-box-inn2 :hover > span{
-  display:block;
-  color:var(--main);
-}
-.service-box-inn3 :hover > span{
-  display:block;
-  color:var(--main);
-}
-.service-box-inn4 :hover > span{
-  display:block;
-  color:var(--main);
-}
-.service-box-inn5 :hover > span{
-  display:block;
-  color:var(--main);
+.service-box-inn1 :hover  span,
+.service-box-inn2 :hover  span,
+.service-box-inn3 :hover  span,
+.service-box-inn4 :hover  span,
+.service-box-inn5 :hover  span{
+  opacity: 1;
+  color: var(--main);
 }
 
-.service-box div{
-  width:20%;
+.service-box div {
+  width: 20%;
   height: 500px;
   background-size: cover;
   background-position: center;
 }
-.service-bg{
-  max-height: 200px;
-  width: 100%; 
-  position:absolute;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1)10%, rgba(0, 0, 0, 0));
+.service-bg {
+  height: 50% !important;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0)
+  );
   bottom: 0;
   z-index: 1;
 }
-.service-box-inn1:hover .service-bg{
-  min-height: 100%;
+.service-box-inn1:hover .service-bg,
+.service-box-inn2:hover .service-bg,
+.service-box-inn3:hover .service-bg,
+.service-box-inn4:hover .service-bg,
+.service-box-inn5:hover .service-bg {
+  height: 78% !important;
 }
-.service-box-inn2:hover .service-bg{
-  min-height: 100%;
-}
-.service-box-inn3:hover .service-bg{
-  min-height: 100%;
-}
-.service-box-inn4:hover .service-bg{
-  min-height: 100%;
-}
-.service-box-inn5:hover .service-bg{
-  min-height: 100%;
-}
-.service-box-inn1{
+.service-box-inn1 {
   background-image: url("/asset/images/cruser.jpg");
 }
-.service-box-inn2{
+.service-box-inn2 {
   background-image: url("/asset/images/domestic.jpg");
 }
-.service-box-inn3{
+.service-box-inn3 {
   background-image: url("/asset/images/honeymoon.jpg");
 }
-.service-box-inn4{
+.service-box-inn4 {
   background-image: url("/asset/images/international.jpeg");
 }
-.service-box-inn5{
+.service-box-inn5 {
   background-image: url("/asset/images/college.jpg");
 }
 
@@ -242,63 +275,63 @@
 
 /* Review Section  */
 
-.review-sec{
+.review-sec {
   padding: 100px 0 150px 0;
   background-image: url(../asset/images/bw_mountain_bg.jpg);
   background-size: cover;
 }
-.review-title{
+.review-title {
   text-align: center;
   margin-bottom: 70px;
 }
-.review-box-inn{
+.review-box-inn {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   background-color: rgba(253, 253, 254, 0.9);
   padding: 50px 30px;
 }
-.stars{
+.stars {
   margin-bottom: 10px;
 }
-.stars img{
+.stars img {
   height: 40px;
 }
 
 /* Footer  */
-.ft{
+.ft {
   background-color: var(--dark);
-  color:#fff;
-  margin:0 auto;
-  padding:50px 0px;
+  color: #fff;
+  margin: 0 auto;
+  padding: 50px 0px;
 }
-.ft li{
+.ft li {
   list-style-type: none;
   padding-bottom: 10px;
 }
-footer .sub-heading{
-  padding-bottom:10px;
+footer .sub-heading {
+  padding-bottom: 10px;
 }
-footer .col-lg-3 img{
+footer .col-lg-3 img {
   width: 80%;
   scale: 0.7;
   align-items: center;
 }
 
 /* Infygain  */
-.infy{
+.infy {
   display: flex;
   justify-content: end;
   align-items: center;
   background-color: var(--dark);
   padding: 0 0 20px 0;
 }
-.infy img{
+.infy img {
   width: 150px;
   margin-right: 22px;
 }
-.infy p{
+.infy p {
   margin: 0 10px;
   padding: 0;
 }
-.infy p a{
+.infy p a {
   color: #fff;
 }
