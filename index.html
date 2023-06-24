@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/home.css" />
@@ -28,13 +29,13 @@
           <nav class="navbar navbar-expand-lg">
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#"
-                    >Home <span class="sr-only">(current)</span></a
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"
+                    >Home <span class="sr-only"></a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link " href="#">About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Packages</a>
@@ -90,14 +91,15 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <video width="100%" autoplay loop>
-              <source src="asset/videos/aspire-banner.mp4" type="video/mp4" />
-              <p>Your browser does not support video</p>
+              <source src="asset/videos/Banner_Video.mp4" type="video/mp4" />
             </video>
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
+              <div>
+                <h5 class="banner-heading">First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide
+                </p>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
@@ -107,10 +109,12 @@
               alt="travel Banner"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
+              <div>
+                <h5 class="banner-heading">Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
@@ -120,10 +124,12 @@
               alt="travel Banner"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
+              <div>
+                <h5 class="banner-heading">Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -150,7 +156,7 @@
     <!-- Banner Section End -->
 
     <!-- spotlight section  -->
-    <section class="spotlight-sec">
+    <!-- <section class="spotlight-sec">
       <div class="container">
         <div class="spotlight row">
           <div class="spot-inn col-md-4">
@@ -194,7 +200,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Spotlight Section End  -->
 
     <!-- About Section  -->
@@ -202,12 +208,7 @@
       <div class="container">
         <div class="home-about row">
           <div class="home-about-img col-md-6">
-            <div>
-              <img class="img-fluid" src="asset/images/banner2.jpg" alt="" />
-            </div>
-            <div>
-              <img class="img-fluid" src="asset/images/banner1.jpg" alt="" />
-            </div>
+            <img class="img-fluid" src="asset/images/family.png" alt="" />
           </div>
           <div class="home-about-cont col-md-6">
             <p class="mini-heading">ABOUT US</p>
@@ -262,63 +263,44 @@
     <!-- Package Category Section End  -->
 
     <!-- popular International package -->
-    <section class="popular">
-      <div class="container">
-        <div class="pop-title-box">
-          <h2 class="main-heading">Popular International Packages</h2>
-          <a href="/" class="link">View All</a>
-        </div>
+    <section class="popular int">
+      <div class="popular-box">
         <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="asset/images/banner3.jpg" alt="" />
-              <div class="bt">
-                <div class="review">
-                  <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </p>
-                </div>
-                <h4 class="sub-heading">Europe</h4>
-              </div>
-            </div>
+          <div class="col-md-2 text-box">
+            <h1 class="main-heading">International Packages</h1>
+            <img src="asset/images/browse-location-img.png" alt="" />
           </div>
-
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="asset/images/banner3.jpg" alt="" />
-              <div class="bt">
-                <div class="review">
-                  <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </p>
-                </div>
-                <h4 class="sub-heading">Europe</h4>
+          <div class="col-md-10 slider-box">
+            <div class="owl-carousel owl-theme nav-right">
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/1.webp" alt=""
+                /></a>
               </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="asset/images/banner3.jpg" alt="" />
-              <div class="bt">
-                <div class="review">
-                  <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </p>
-                </div>
-                <h4 class="sub-heading">Europe</h4>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/2.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/1.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/2.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/1.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/2.webp" alt=""
+                /></a>
               </div>
             </div>
           </div>
@@ -327,203 +309,146 @@
     </section>
     <!-- end popular International package -->
 
-    <!-- Popular Domestic Destination  -->
-    <section class="popular">
-      <div class="container">
-        <div class="pop-title-box">
-          <h2 class="main-heading">Popular Domestic Packages</h2>
-          <a href="/" class="link">View All</a>
-        </div>
+    <!-- popular Domestic package -->
+    <section class="popular dom nav-left">
+      <div class="popular-box">
         <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="asset/images/banner3.jpg" alt="" />
-              <div class="bt">
-                <div class="review">
-                  <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </p>
-                </div>
-                <h4 class="sub-heading">Europe</h4>
+          <div class="col-md-10 slider-box">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/1.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/2.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/1.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/2.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/1.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/2.webp" alt=""
+                /></a>
               </div>
             </div>
           </div>
-
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="asset/images/banner3.jpg" alt="" />
-              <div class="bt">
-                <div class="review">
-                  <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </p>
-                </div>
-                <h4 class="sub-heading">Europe</h4>
-              </div>
-            </div>
+          <div class="col-md-2 text-box">
+            <h1 class="main-heading">Domestic Packages</h1>
+            <img src="asset/images/browse-location-img.png" alt="" />
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- end popular Domestic package -->
 
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="asset/images/banner3.jpg" alt="" />
-              <div class="bt">
-                <div class="review">
-                  <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </p>
-                </div>
-                <h4 class="sub-heading">Europe</h4>
+    <!-- popular Education package -->
+    <section class="popular edu">
+      <div class="popular-box">
+        <div class="row">
+          <div class="col-md-2 text-box">
+            <h1 class="main-heading">Educational Packages</h1>
+            <img src="asset/images/browse-location-img.png" alt="" />
+          </div>
+          <div class="col-md-10 slider-box">
+            <div class="owl-carousel owl-theme nav-right">
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/1.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/2.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/1.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/2.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/1.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/2.webp" alt=""
+                /></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Popular Domestic Destination End  -->
+    <!-- end popular Education package -->
 
-    <!-- popular Educational package -->
-    <section class="popular">
-      <div class="container">
-        <div class="pop-title-box">
-          <h2 class="main-heading">Popular Educational Packages</h2>
-          <a href="/" class="link">View All</a>
-        </div>
+    <!-- popular Honeymoon package -->
+    <section class="popular hny">
+      <div class="popular-box">
         <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="asset/images/banner3.jpg" alt="" />
-              <div class="bt">
-                <div class="review">
-                  <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </p>
-                </div>
-                <h4 class="sub-heading">Europe</h4>
+          <div class="col-md-10 slider-box">
+            <div class="owl-carousel owl-theme nav-left">
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/1.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/2.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/1.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/2.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/1.webp" alt=""
+                /></a>
+              </div>
+              <div class="item">
+                <a href=""
+                  ><img class="item-img" src="asset/images/2.webp" alt=""
+                /></a>
               </div>
             </div>
           </div>
-
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="asset/images/banner3.jpg" alt="" />
-              <div class="bt">
-                <div class="review">
-                  <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </p>
-                </div>
-                <h4 class="sub-heading">Europe</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="asset/images/banner3.jpg" alt="" />
-              <div class="bt">
-                <div class="review">
-                  <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </p>
-                </div>
-                <h4 class="sub-heading">Europe</h4>
-              </div>
-            </div>
+          <div class="col-md-2 text-box">
+            <h1 class="main-heading">Honeymoon Packages</h1>
+            <img src="asset/images/browse-location-img.png" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <!-- end popular Educational package -->
-
-    <!-- Popular Honeymoon Destination  -->
-    <section class="popular">
-      <div class="container">
-        <div class="pop-title-box">
-          <h2 class="main-heading">Popular Honeymoon Packages</h2>
-          <a href="/" class="link">View All</a>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="asset/images/banner3.jpg" alt="" />
-              <div class="bt">
-                <div class="review">
-                  <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </p>
-                </div>
-                <h4 class="sub-heading">Europe</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="asset/images/banner3.jpg" alt="" />
-              <div class="bt">
-                <div class="review">
-                  <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </p>
-                </div>
-                <h4 class="sub-heading">Europe</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="asset/images/banner3.jpg" alt="" />
-              <div class="bt">
-                <div class="review">
-                  <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </p>
-                </div>
-                <h4 class="sub-heading">Europe</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Popular Honeymoon Destination End  -->
+    <!-- end popular Honeymoon package -->
 
     <!-- blog Section  -->
     <section class="blog-sec">
@@ -602,7 +527,7 @@
 
     <!-- service section start -->
     <section class="service">
-      <h6 class="sub-heading text-center">Our Services</h6>
+      <h6 class="main-heading text-center">Our Services</h6>
       <div class="service-box">
         <div class="service-box-inn1">
           <div class="service-text">
@@ -760,8 +685,16 @@
 
     <!-- infy Section  -->
     <div class="infy">
-      <p><a target="_blank" class="link" href="https://infygain.com">Developed & Maitained By</a></p>
-      <a target="_blank" href="https://infygain.com"><img src="https://infygain.com/images/logo-alt.svg" alt="Infygain Logo"></a>
+      <p>
+        <a target="_blank" class="link" href="https://infygain.com"
+          >Developed & Maitained By</a
+        >
+      </p>
+      <a target="_blank" href="https://infygain.com"
+        ><img
+          src="https://infygain.com/images/logo-alt.svg"
+          alt="Infygain Logo"
+      /></a>
     </div>
     <!-- Infy Section End  -->
 
@@ -779,7 +712,25 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
     <script src="js/package.js"></script>
   </body>
 </html>

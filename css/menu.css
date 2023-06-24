@@ -5,6 +5,12 @@
     background-color: #fff;
     /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); */
 }
+.nav-item .nav-link:hover{
+    color: var(--main);
+}
+.nav-item .active{
+    color: var(--main) !important;
+}
 .logo-box,
 .list-box,
 .icons-box{

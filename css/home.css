@@ -1,22 +1,21 @@
-/* BAnner  */
-
-/* .main-banner{
-    margin-bottom: -5px;
-} */
-.banner-sec {
-  /* margin-top: 100px; */
-}
 .main-banner .carousel-inner {
-  max-height: 600px;
+  min-height: 700px;
+  max-height: 700px;
   overflow: hidden;
   display: flex;
+  position: relative;
+}
+.carousel-caption{
+  position: absolute;
+  height: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 /* Spot light */
 .spotlight-sec {
-  height: 400px;
   padding: 110px;
-  margin-bottom: 200px;
 }
 .spot-inn {
   padding: 20px;
@@ -37,33 +36,11 @@
 }
 
 /* Home About  */
-
+.home-about{
+  justify-content: center;
+  align-items: center;
+}
 .about-sec {
-  padding: 200px 0;
-}
-.home-about-img {
-  position: relative;
-}
-.home-about-img div {
-  position: absolute;
-  overflow: hidden;
-  border-radius: 20px;
-}
-.home-about-img div img {
-  height: 100%;
-}
-
-.home-about-img div:first-child {
-  width: 90%;
-  height: 500px;
-}
-.home-about-img div:nth-child(2) {
-  width: 300px;
-  height: 350px;
-  top: -30px;
-  left: -30px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-.home-about-cont {
-  margin-top: 50px;
+  padding: 50px 0;
+  background-color: #f1f1f1;
 }
